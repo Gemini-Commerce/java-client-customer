@@ -43,19 +43,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Customer.JSON;
+import GeminiCommerce.Customer.JSON;
 
 /**
  * CustomerAddressCustomerResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T12:05:51.588588303Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:44:50.163421017Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CustomerAddressCustomerResponse {
   public static final String SERIALIZED_NAME_EM = "em";
   @SerializedName(SERIALIZED_NAME_EM)
@@ -141,10 +140,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get em
    * @return em
-  **/
+   */
   @javax.annotation.Nullable
   public CustomerEMFields getEm() {
     return em;
@@ -160,10 +159,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get grn
    * @return grn
-  **/
+   */
   @javax.annotation.Nullable
   public String getGrn() {
     return grn;
@@ -179,10 +178,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -198,10 +197,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   public String getName() {
     return name;
@@ -217,10 +216,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get surname
    * @return surname
-  **/
+   */
   @javax.annotation.Nullable
   public String getSurname() {
     return surname;
@@ -236,10 +235,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get street
    * @return street
-  **/
+   */
   @javax.annotation.Nullable
   public String getStreet() {
     return street;
@@ -255,10 +254,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get number
    * @return number
-  **/
+   */
   @javax.annotation.Nullable
   public String getNumber() {
     return number;
@@ -274,10 +273,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get zip
    * @return zip
-  **/
+   */
   @javax.annotation.Nullable
   public String getZip() {
     return zip;
@@ -293,10 +292,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get city
    * @return city
-  **/
+   */
   @javax.annotation.Nullable
   public String getCity() {
     return city;
@@ -312,10 +311,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get province
    * @return province
-  **/
+   */
   @javax.annotation.Nullable
   public String getProvince() {
     return province;
@@ -331,10 +330,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get phoneNumber
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -350,10 +349,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get fiscalCode
    * @return fiscalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getFiscalCode() {
     return fiscalCode;
@@ -369,10 +368,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get vatNumber
    * @return vatNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVatNumber() {
     return vatNumber;
@@ -388,10 +387,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get kind
    * @return kind
-  **/
+   */
   @javax.annotation.Nullable
   public CustomerAddressCustomerResponseKind getKind() {
     return kind;
@@ -407,10 +406,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get _default
    * @return _default
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getDefault() {
     return _default;
@@ -426,10 +425,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nullable
   public String getCountry() {
     return country;
@@ -445,10 +444,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAt() {
     return createdAt;
@@ -464,10 +463,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get updatedAt
    * @return updatedAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getUpdatedAt() {
     return updatedAt;
@@ -491,10 +490,10 @@ public class CustomerAddressCustomerResponse {
     return this;
   }
 
-   /**
+  /**
    * Get attributes
    * @return attributes
-  **/
+   */
   @javax.annotation.Nullable
   public Map<String, ProtobufAny> getAttributes() {
     return attributes;
@@ -504,6 +503,50 @@ public class CustomerAddressCustomerResponse {
     this.attributes = attributes;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the CustomerAddressCustomerResponse instance itself
+   */
+  public CustomerAddressCustomerResponse putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -533,12 +576,13 @@ public class CustomerAddressCustomerResponse {
         Objects.equals(this.country, customerAddressCustomerResponse.country) &&
         Objects.equals(this.createdAt, customerAddressCustomerResponse.createdAt) &&
         Objects.equals(this.updatedAt, customerAddressCustomerResponse.updatedAt) &&
-        Objects.equals(this.attributes, customerAddressCustomerResponse.attributes);
+        Objects.equals(this.attributes, customerAddressCustomerResponse.attributes)&&
+        Objects.equals(this.additionalProperties, customerAddressCustomerResponse.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(em, grn, id, name, surname, street, number, zip, city, province, phoneNumber, fiscalCode, vatNumber, kind, _default, country, createdAt, updatedAt, attributes);
+    return Objects.hash(em, grn, id, name, surname, street, number, zip, city, province, phoneNumber, fiscalCode, vatNumber, kind, _default, country, createdAt, updatedAt, attributes, additionalProperties);
   }
 
   @Override
@@ -564,6 +608,7 @@ public class CustomerAddressCustomerResponse {
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
     sb.append("    attributes: ").append(toIndentedString(attributes)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -610,24 +655,16 @@ public class CustomerAddressCustomerResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to CustomerAddressCustomerResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to CustomerAddressCustomerResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!CustomerAddressCustomerResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in CustomerAddressCustomerResponse is not found in the empty JSON string", CustomerAddressCustomerResponse.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CustomerAddressCustomerResponse.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CustomerAddressCustomerResponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -695,6 +732,28 @@ public class CustomerAddressCustomerResponse {
            @Override
            public void write(JsonWriter out, CustomerAddressCustomerResponse value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -702,29 +761,50 @@ public class CustomerAddressCustomerResponse {
            public CustomerAddressCustomerResponse read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             CustomerAddressCustomerResponse instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of CustomerAddressCustomerResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of CustomerAddressCustomerResponse
-  * @throws IOException if the JSON string is invalid with respect to CustomerAddressCustomerResponse
-  */
+  /**
+   * Create an instance of CustomerAddressCustomerResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of CustomerAddressCustomerResponse
+   * @throws IOException if the JSON string is invalid with respect to CustomerAddressCustomerResponse
+   */
   public static CustomerAddressCustomerResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, CustomerAddressCustomerResponse.class);
   }
 
- /**
-  * Convert an instance of CustomerAddressCustomerResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of CustomerAddressCustomerResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

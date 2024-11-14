@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**consents**| [**List<CustomerConsent>**](CustomerConsent.md) |   | [optional]
+**consents**| [**List<CustomerConsent>**](CustomerConsent.md) |   | [optional] [default to new ArrayList<>()]
 **nextPageToken**| **String** |   | [optional]
 
 

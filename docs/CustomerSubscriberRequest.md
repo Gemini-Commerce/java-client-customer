@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **em**| [**CustomerEMFields**](CustomerEMFields.md) |   | [optional]
 **createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 **updatedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
-**newsletters**| [**List<CustomerNewsletterRequest>**](CustomerNewsletterRequest.md) |   | [optional]
+**newsletters**| [**List<CustomerNewsletterRequest>**](CustomerNewsletterRequest.md) |   | [optional] [default to new ArrayList<>()]
 **market**| **String** |   | [optional]
 **preferredLocale**| **String** |   | [optional]
 **consent**| [**CustomerCreateConsentRequest**](CustomerCreateConsentRequest.md) |   | [optional]

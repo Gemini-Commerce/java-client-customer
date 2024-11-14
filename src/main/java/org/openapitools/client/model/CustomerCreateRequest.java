@@ -48,19 +48,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Customer.JSON;
+import GeminiCommerce.Customer.JSON;
 
 /**
  * CustomerCreateRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T12:05:51.588588303Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:44:50.163421017Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CustomerCreateRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -100,7 +99,7 @@ public class CustomerCreateRequest {
 
   public static final String SERIALIZED_NAME_ADDRESSES = "addresses";
   @SerializedName(SERIALIZED_NAME_ADDRESSES)
-  private List<CustomerAddressEntity> addresses;
+  private List<CustomerAddressEntity> addresses = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
@@ -112,7 +111,7 @@ public class CustomerCreateRequest {
 
   public static final String SERIALIZED_NAME_GROUPS = "groups";
   @SerializedName(SERIALIZED_NAME_GROUPS)
-  private List<String> groups;
+  private List<String> groups = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DELETED = "deleted";
   @SerializedName(SERIALIZED_NAME_DELETED)
@@ -120,7 +119,7 @@ public class CustomerCreateRequest {
 
   public static final String SERIALIZED_NAME_NEWSLETTERS = "newsletters";
   @SerializedName(SERIALIZED_NAME_NEWSLETTERS)
-  private List<CustomerNewsletterRequest> newsletters;
+  private List<CustomerNewsletterRequest> newsletters = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DO_NOT_NOTIFY = "doNotNotify";
   @SerializedName(SERIALIZED_NAME_DO_NOT_NOTIFY)
@@ -186,10 +185,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nullable
   public String getTenantId() {
     return tenantId;
@@ -205,10 +204,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get em
    * @return em
-  **/
+   */
   @javax.annotation.Nullable
   public CustomerEMFields getEm() {
     return em;
@@ -224,10 +223,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   public String getName() {
     return name;
@@ -243,10 +242,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get surname
    * @return surname
-  **/
+   */
   @javax.annotation.Nullable
   public String getSurname() {
     return surname;
@@ -262,10 +261,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get email
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   public String getEmail() {
     return email;
@@ -281,10 +280,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get birthdate
    * @return birthdate
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getBirthdate() {
     return birthdate;
@@ -300,10 +299,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get gender
    * @return gender
-  **/
+   */
   @javax.annotation.Nullable
   public String getGender() {
     return gender;
@@ -319,10 +318,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get enabled
    * @return enabled
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getEnabled() {
     return enabled;
@@ -338,10 +337,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get source
    * @return source
-  **/
+   */
   @javax.annotation.Nullable
   public String getSource() {
     return source;
@@ -365,10 +364,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get addresses
    * @return addresses
-  **/
+   */
   @javax.annotation.Nullable
   public List<CustomerAddressEntity> getAddresses() {
     return addresses;
@@ -384,10 +383,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get phoneNumber
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -403,10 +402,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get nationality
    * @return nationality
-  **/
+   */
   @javax.annotation.Nullable
   public String getNationality() {
     return nationality;
@@ -430,10 +429,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get groups
    * @return groups
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getGroups() {
     return groups;
@@ -449,10 +448,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get deleted
    * @return deleted
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getDeleted() {
     return deleted;
@@ -476,10 +475,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get newsletters
    * @return newsletters
-  **/
+   */
   @javax.annotation.Nullable
   public List<CustomerNewsletterRequest> getNewsletters() {
     return newsletters;
@@ -495,10 +494,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get doNotNotify
    * @return doNotNotify
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getDoNotNotify() {
     return doNotNotify;
@@ -522,10 +521,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get attributes
    * @return attributes
-  **/
+   */
   @javax.annotation.Nullable
   public Map<String, ProtobufAny> getAttributes() {
     return attributes;
@@ -541,10 +540,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get migratedPassword
    * @return migratedPassword
-  **/
+   */
   @javax.annotation.Nullable
   public CustomerPassword getMigratedPassword() {
     return migratedPassword;
@@ -560,10 +559,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get market
    * @return market
-  **/
+   */
   @javax.annotation.Nullable
   public String getMarket() {
     return market;
@@ -579,10 +578,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get preferredLocale
    * @return preferredLocale
-  **/
+   */
   @javax.annotation.Nullable
   public String getPreferredLocale() {
     return preferredLocale;
@@ -598,10 +597,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get taxCode
    * @return taxCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getTaxCode() {
     return taxCode;
@@ -617,10 +616,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get certifiedEmail
    * @return certifiedEmail
-  **/
+   */
   @javax.annotation.Nullable
   public String getCertifiedEmail() {
     return certifiedEmail;
@@ -636,10 +635,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get sdiCode
    * @return sdiCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getSdiCode() {
     return sdiCode;
@@ -655,10 +654,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get fiscalCode
    * @return fiscalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getFiscalCode() {
     return fiscalCode;
@@ -674,10 +673,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get companyName
    * @return companyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCompanyName() {
     return companyName;
@@ -693,10 +692,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public Object getAdditionalInfo() {
     return additionalInfo;
@@ -720,10 +719,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get externalIds
    * @return externalIds
-  **/
+   */
   @javax.annotation.Nullable
   public Map<String, String> getExternalIds() {
     return externalIds;
@@ -739,10 +738,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get consent
    * @return consent
-  **/
+   */
   @javax.annotation.Nullable
   public CustomerCreateConsentRequest getConsent() {
     return consent;
@@ -758,10 +757,10 @@ public class CustomerCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get aggregationId
    * @return aggregationId
-  **/
+   */
   @javax.annotation.Nullable
   public String getAggregationId() {
     return aggregationId;
@@ -771,6 +770,50 @@ public class CustomerCreateRequest {
     this.aggregationId = aggregationId;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the CustomerCreateRequest instance itself
+   */
+  public CustomerCreateRequest putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -810,12 +853,13 @@ public class CustomerCreateRequest {
         Objects.equals(this.additionalInfo, customerCreateRequest.additionalInfo) &&
         Objects.equals(this.externalIds, customerCreateRequest.externalIds) &&
         Objects.equals(this.consent, customerCreateRequest.consent) &&
-        Objects.equals(this.aggregationId, customerCreateRequest.aggregationId);
+        Objects.equals(this.aggregationId, customerCreateRequest.aggregationId)&&
+        Objects.equals(this.additionalProperties, customerCreateRequest.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, em, name, surname, email, birthdate, gender, enabled, source, addresses, phoneNumber, nationality, groups, deleted, newsletters, doNotNotify, attributes, migratedPassword, market, preferredLocale, taxCode, certifiedEmail, sdiCode, fiscalCode, companyName, additionalInfo, externalIds, consent, aggregationId);
+    return Objects.hash(tenantId, em, name, surname, email, birthdate, gender, enabled, source, addresses, phoneNumber, nationality, groups, deleted, newsletters, doNotNotify, attributes, migratedPassword, market, preferredLocale, taxCode, certifiedEmail, sdiCode, fiscalCode, companyName, additionalInfo, externalIds, consent, aggregationId, additionalProperties);
   }
 
   @Override
@@ -851,6 +895,7 @@ public class CustomerCreateRequest {
     sb.append("    externalIds: ").append(toIndentedString(externalIds)).append("\n");
     sb.append("    consent: ").append(toIndentedString(consent)).append("\n");
     sb.append("    aggregationId: ").append(toIndentedString(aggregationId)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -907,24 +952,16 @@ public class CustomerCreateRequest {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to CustomerCreateRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to CustomerCreateRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!CustomerCreateRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in CustomerCreateRequest is not found in the empty JSON string", CustomerCreateRequest.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CustomerCreateRequest.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CustomerCreateRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -1037,6 +1074,28 @@ public class CustomerCreateRequest {
            @Override
            public void write(JsonWriter out, CustomerCreateRequest value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -1044,29 +1103,50 @@ public class CustomerCreateRequest {
            public CustomerCreateRequest read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             CustomerCreateRequest instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of CustomerCreateRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of CustomerCreateRequest
-  * @throws IOException if the JSON string is invalid with respect to CustomerCreateRequest
-  */
+  /**
+   * Create an instance of CustomerCreateRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of CustomerCreateRequest
+   * @throws IOException if the JSON string is invalid with respect to CustomerCreateRequest
+   */
   public static CustomerCreateRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, CustomerCreateRequest.class);
   }
 
- /**
-  * Convert an instance of CustomerCreateRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of CustomerCreateRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

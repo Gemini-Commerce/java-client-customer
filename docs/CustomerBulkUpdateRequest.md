@@ -7,7 +7,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tenantId**| **String** |   | [optional]
-**customerIds**| **List<String>** |   | [optional]
+**customerIds**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **action**| [**BulkUpdateRequestAction**](BulkUpdateRequestAction.md) |  for more information please, see Model/BulkUpdateRequestAction.php  | [optional] [default to BulkUpdateRequestAction.ENABLE]
 
 

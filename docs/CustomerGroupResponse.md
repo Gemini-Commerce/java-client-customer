@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id**| **String** |   | [optional]
 **name**| **String** |   | [optional]
-**customerIds**| **List<String>** |   | [optional]
+**customerIds**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 **updatedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 **grn**| **String** |   | [optional]

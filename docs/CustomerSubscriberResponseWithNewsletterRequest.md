@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **preferredLocale**| **String** |   | [optional]
 **createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 **updatedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
-**newsletters**| [**List<CustomerNewsletterRequest>**](CustomerNewsletterRequest.md) |   | [optional]
+**newsletters**| [**List<CustomerNewsletterRequest>**](CustomerNewsletterRequest.md) |   | [optional] [default to new ArrayList<>()]
 **consent**| [**CustomerCreateConsentRequest**](CustomerCreateConsentRequest.md) |   | [optional]
 
 

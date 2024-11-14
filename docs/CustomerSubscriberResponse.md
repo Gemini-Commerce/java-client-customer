@@ -17,10 +17,10 @@ Name | Type | Description | Notes
 **em**| [**CustomerEMFields**](CustomerEMFields.md) |   | [optional]
 **createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 **updatedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
-**newsletters**| [**List<CustomerNewsletterResponse>**](CustomerNewsletterResponse.md) |   | [optional]
+**newsletters**| [**List<CustomerNewsletterResponse>**](CustomerNewsletterResponse.md) |   | [optional] [default to new ArrayList<>()]
 **market**| **String** |   | [optional]
 **preferredLocale**| **String** |   | [optional]
-**customerGroups**| **List<String>** |   | [optional]
+**customerGroups**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

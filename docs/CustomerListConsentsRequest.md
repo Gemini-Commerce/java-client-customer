@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **tenantId**| **String** |   | [optional]
 **pageSize**| **Long** |   | [optional]
 **pageToken**| **String** |   | [optional]
-**sorts**| [**List<ListConsentsRequestSort>**](ListConsentsRequestSort.md) |   | [optional]
+**sorts**| [**List<ListConsentsRequestSort>**](ListConsentsRequestSort.md) |   | [optional] [default to new ArrayList<>()]
 **filtersMask**| **String** |   | [optional]
 **filters**| [**ListConsentsRequestFilters**](ListConsentsRequestFilters.md) |   | [optional]
 

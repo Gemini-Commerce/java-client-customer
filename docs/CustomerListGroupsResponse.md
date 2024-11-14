@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**groups**| [**List<CustomerGroupResponse>**](CustomerGroupResponse.md) |   | [optional]
+**groups**| [**List<CustomerGroupResponse>**](CustomerGroupResponse.md) |   | [optional] [default to new ArrayList<>()]
 **nextPageToken**| **String** |   | [optional]
 
 

@@ -6,9 +6,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**genders**| **List<String>** |   | [optional]
-**createdAt**| [**List<ListCustomersRequestFilterDate>**](ListCustomersRequestFilterDate.md) |   | [optional]
-**countries**| **List<String>** |   | [optional]
+**genders**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**createdAt**| [**List<ListCustomersRequestFilterDate>**](ListCustomersRequestFilterDate.md) |   | [optional] [default to new ArrayList<>()]
+**countries**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **agentGrn**| **String** |   | [optional]
 
 

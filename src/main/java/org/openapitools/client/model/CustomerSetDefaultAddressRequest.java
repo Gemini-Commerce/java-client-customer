@@ -37,19 +37,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Customer.JSON;
+import GeminiCommerce.Customer.JSON;
 
 /**
  * CustomerSetDefaultAddressRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T12:05:51.588588303Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:44:50.163421017Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CustomerSetDefaultAddressRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -71,10 +70,10 @@ public class CustomerSetDefaultAddressRequest {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nullable
   public String getTenantId() {
     return tenantId;
@@ -90,10 +89,10 @@ public class CustomerSetDefaultAddressRequest {
     return this;
   }
 
-   /**
+  /**
    * Get customerId
    * @return customerId
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerId() {
     return customerId;
@@ -109,10 +108,10 @@ public class CustomerSetDefaultAddressRequest {
     return this;
   }
 
-   /**
+  /**
    * Get addressId
    * @return addressId
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressId() {
     return addressId;
@@ -122,6 +121,50 @@ public class CustomerSetDefaultAddressRequest {
     this.addressId = addressId;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the CustomerSetDefaultAddressRequest instance itself
+   */
+  public CustomerSetDefaultAddressRequest putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -135,12 +178,13 @@ public class CustomerSetDefaultAddressRequest {
     CustomerSetDefaultAddressRequest customerSetDefaultAddressRequest = (CustomerSetDefaultAddressRequest) o;
     return Objects.equals(this.tenantId, customerSetDefaultAddressRequest.tenantId) &&
         Objects.equals(this.customerId, customerSetDefaultAddressRequest.customerId) &&
-        Objects.equals(this.addressId, customerSetDefaultAddressRequest.addressId);
+        Objects.equals(this.addressId, customerSetDefaultAddressRequest.addressId)&&
+        Objects.equals(this.additionalProperties, customerSetDefaultAddressRequest.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, customerId, addressId);
+    return Objects.hash(tenantId, customerId, addressId, additionalProperties);
   }
 
   @Override
@@ -150,6 +194,7 @@ public class CustomerSetDefaultAddressRequest {
     sb.append("    tenantId: ").append(toIndentedString(tenantId)).append("\n");
     sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
     sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -180,24 +225,16 @@ public class CustomerSetDefaultAddressRequest {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to CustomerSetDefaultAddressRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to CustomerSetDefaultAddressRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!CustomerSetDefaultAddressRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in CustomerSetDefaultAddressRequest is not found in the empty JSON string", CustomerSetDefaultAddressRequest.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CustomerSetDefaultAddressRequest.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CustomerSetDefaultAddressRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -227,6 +264,28 @@ public class CustomerSetDefaultAddressRequest {
            @Override
            public void write(JsonWriter out, CustomerSetDefaultAddressRequest value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -234,29 +293,50 @@ public class CustomerSetDefaultAddressRequest {
            public CustomerSetDefaultAddressRequest read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             CustomerSetDefaultAddressRequest instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of CustomerSetDefaultAddressRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of CustomerSetDefaultAddressRequest
-  * @throws IOException if the JSON string is invalid with respect to CustomerSetDefaultAddressRequest
-  */
+  /**
+   * Create an instance of CustomerSetDefaultAddressRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of CustomerSetDefaultAddressRequest
+   * @throws IOException if the JSON string is invalid with respect to CustomerSetDefaultAddressRequest
+   */
   public static CustomerSetDefaultAddressRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, CustomerSetDefaultAddressRequest.class);
   }
 
- /**
-  * Convert an instance of CustomerSetDefaultAddressRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of CustomerSetDefaultAddressRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

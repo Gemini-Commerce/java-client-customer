@@ -10,6 +10,8 @@ info:
   version: v1
 servers:
 - url: https://cdp.api.gogemini.io/
+security:
+- Authorization: []
 tags:
 - externalDocs:
     url: https://gemini-commerce.com/api/cdp
@@ -41,7 +43,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/AcquireUnsubscriber:
     post:
       operationId: Customer_AcquireUnsubscriber2
@@ -68,7 +71,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/AddCustomerToGroup:
     post:
       operationId: Customer_AddCustomerToGroup2
@@ -95,7 +99,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/AssignAgent:
     post:
       operationId: Customer_AssignAgent
@@ -122,7 +127,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/BulkUpdate:
     post:
       operationId: Customer_BulkUpdate2
@@ -149,7 +155,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/Create:
     post:
       operationId: Customer_Create2
@@ -176,7 +183,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/CreateAddress:
     post:
       operationId: Customer_CreateAddress2
@@ -203,7 +211,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/CreateGroup:
     post:
       operationId: Customer_CreateGroup2
@@ -230,7 +239,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/CreateSubscriber:
     post:
       operationId: Customer_CreateSubscriber2
@@ -257,7 +267,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/DeleteAddress:
     post:
       operationId: Customer_DeleteAddress2
@@ -284,7 +295,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/DeleteGroup:
     post:
       operationId: Customer_DeleteGroup2
@@ -311,7 +323,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/Find:
     post:
       operationId: Customer_Find2
@@ -338,7 +351,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/FindByEmail:
     post:
       operationId: Customer_FindByEmail2
@@ -365,7 +379,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/FindById:
     post:
       operationId: Customer_FindById2
@@ -392,7 +407,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/FindSubscriberByEmail:
     post:
       operationId: Customer_FindSubscriberByEmail2
@@ -419,7 +435,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/FindSubscriberById:
     post:
       operationId: Customer_FindSubscriberById2
@@ -446,7 +463,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/GetGroupByCode:
     post:
       operationId: Customer_GetGroupByCode2
@@ -473,7 +491,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/GetGroupById:
     post:
       operationId: Customer_GetGroupById2
@@ -500,7 +519,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/GrantPermissions:
     post:
       operationId: Customer_GrantPermissions2
@@ -527,7 +547,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/ListConsents:
     post:
       operationId: Customer_ListConsents
@@ -555,7 +576,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/ListCustomers:
     post:
       operationId: Customer_ListCustomers2
@@ -582,7 +604,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/ListGroups:
     post:
       operationId: Customer_ListGroups2
@@ -609,7 +632,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/RemoveCustomerFromGroup:
     post:
       operationId: Customer_RemoveCustomerFromGroup2
@@ -636,7 +660,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/RemoveDefaultAddress:
     post:
       operationId: Customer_RemoveDefaultAddress2
@@ -663,7 +688,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/RevokePermissions:
     post:
       operationId: Customer_RevokePermissions2
@@ -690,7 +716,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/Search:
     post:
       operationId: Customer_Search2
@@ -717,7 +744,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/SetDefaultAddress:
     post:
       operationId: Customer_SetDefaultAddress2
@@ -744,7 +772,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/SetPermissions:
     post:
       operationId: Customer_SetPermissions2
@@ -771,7 +800,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/UnassignAgent:
     post:
       operationId: Customer_UnassignAgent
@@ -798,7 +828,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/Unsubscribe:
     post:
       operationId: Customer_Unsubscribe2
@@ -825,7 +856,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/Update:
     post:
       operationId: Customer_Update2
@@ -852,7 +884,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/UpdateAddress:
     post:
       operationId: Customer_UpdateAddress2
@@ -879,7 +912,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/UpdateGroup:
     post:
       operationId: Customer_UpdateGroup2
@@ -906,7 +940,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer.Customer/UpdateSubscriber:
     post:
       operationId: Customer_UpdateSubscriber2
@@ -933,7 +968,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/acquire_subscriber:
     post:
       operationId: Customer_AcquireSubscriber
@@ -960,7 +996,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/acquire_unsubscriber:
     post:
       operationId: Customer_AcquireUnsubscriber
@@ -987,7 +1024,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/add_customer_to_segment:
     post:
       operationId: Customer_AddCustomerToGroup
@@ -1014,7 +1052,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/bulk_update:
     post:
       operationId: Customer_BulkUpdate
@@ -1041,7 +1080,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/create:
     post:
       operationId: Customer_Create
@@ -1068,7 +1108,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/create_address:
     post:
       operationId: Customer_CreateAddress
@@ -1095,7 +1136,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/create_segment:
     post:
       operationId: Customer_CreateGroup
@@ -1122,7 +1164,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/create_subscriber:
     post:
       operationId: Customer_CreateSubscriber
@@ -1149,7 +1192,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/delete_address:
     post:
       operationId: Customer_DeleteAddress
@@ -1176,7 +1220,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/delete_segment:
     post:
       operationId: Customer_DeleteGroup
@@ -1203,7 +1248,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/find:
     post:
       operationId: Customer_Find
@@ -1230,7 +1276,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/find_by_email:
     post:
       operationId: Customer_FindByEmail
@@ -1257,7 +1304,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/find_by_id:
     post:
       operationId: Customer_FindById
@@ -1284,7 +1332,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/find_subscriber_by_email:
     post:
       operationId: Customer_FindSubscriberByEmail
@@ -1311,7 +1360,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/find_subscriber_by_id:
     post:
       operationId: Customer_FindSubscriberById
@@ -1338,7 +1388,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/get_segment_by_code:
     post:
       operationId: Customer_GetGroupByCode
@@ -1365,7 +1416,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/get_segment_by_id:
     post:
       operationId: Customer_GetGroupById
@@ -1392,7 +1444,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/grant_permissions:
     post:
       operationId: Customer_GrantPermissions
@@ -1419,7 +1472,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/list_customers:
     post:
       operationId: Customer_ListCustomers
@@ -1446,7 +1500,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/list_segments:
     post:
       operationId: Customer_ListGroups
@@ -1473,7 +1528,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/remove_customer_from_segment:
     post:
       operationId: Customer_RemoveCustomerFromGroup
@@ -1500,7 +1556,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/remove_default_address:
     post:
       operationId: Customer_RemoveDefaultAddress
@@ -1527,7 +1584,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/revoke_permissions:
     post:
       operationId: Customer_RevokePermissions
@@ -1554,7 +1612,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/search:
     post:
       operationId: Customer_Search
@@ -1581,7 +1640,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/set_default_address:
     post:
       operationId: Customer_SetDefaultAddress
@@ -1608,7 +1668,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/set_permissions:
     post:
       operationId: Customer_SetPermissions
@@ -1635,7 +1696,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/unsubscribe:
     post:
       operationId: Customer_Unsubscribe
@@ -1662,7 +1724,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/update:
     post:
       operationId: Customer_Update
@@ -1689,7 +1752,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/update_address:
     post:
       operationId: Customer_UpdateAddress
@@ -1716,7 +1780,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/update_segment:
     post:
       operationId: Customer_UpdateGroup
@@ -1743,7 +1808,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /customer/update_subscriber:
     post:
       operationId: Customer_UpdateSubscriber
@@ -1770,7 +1836,8 @@ paths:
       - Customer
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
 components:
   schemas:
     BulkUpdateRequestAction:
@@ -1884,7 +1951,7 @@ components:
         country: country
         grn: grn
         city: city
-        kind: null
+        kind: SHIPPING
         em:
           entityCode: entityCode
           entityType: entityType
@@ -1972,7 +2039,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -1996,7 +2063,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -2033,8 +2100,8 @@ components:
             id: id
           surname: surname
           permissions:
-          - null
-          - null
+          - PERMISSION_UNKNOWN
+          - PERMISSION_UNKNOWN
           fiscalCode: fiscalCode
           additionalInfo: "{}"
           id: id
@@ -2056,7 +2123,7 @@ components:
           migratedPassword:
             data:
               key: data
-            type: null
+            type: PASSWORD_TYPE_UNKNOWN
             enabled: true
           taxCode: taxCode
           defaultBillingAddressId: defaultBillingAddressId
@@ -2137,7 +2204,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -2161,7 +2228,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -2198,8 +2265,8 @@ components:
             id: id
           surname: surname
           permissions:
-          - null
-          - null
+          - PERMISSION_UNKNOWN
+          - PERMISSION_UNKNOWN
           fiscalCode: fiscalCode
           additionalInfo: "{}"
           id: id
@@ -2221,7 +2288,7 @@ components:
           migratedPassword:
             data:
               key: data
-            type: null
+            type: PASSWORD_TYPE_UNKNOWN
             enabled: true
           taxCode: taxCode
           defaultBillingAddressId: defaultBillingAddressId
@@ -2282,7 +2349,7 @@ components:
           key: true
         author: author
         id: id
-        source: null
+        source: CONSENT_SOURCE_UNKNOWN
         subjectId: subjectId
       properties:
         id:
@@ -2415,7 +2482,7 @@ components:
           country: country
           grn: grn
           city: city
-          kind: null
+          kind: SHIPPING
           em:
             entityCode: entityCode
             entityType: entityType
@@ -2439,7 +2506,7 @@ components:
           country: country
           grn: grn
           city: city
-          kind: null
+          kind: SHIPPING
           em:
             entityCode: entityCode
             entityType: entityType
@@ -2476,8 +2543,8 @@ components:
           id: id
         surname: surname
         permissions:
-        - null
-        - null
+        - PERMISSION_UNKNOWN
+        - PERMISSION_UNKNOWN
         fiscalCode: fiscalCode
         additionalInfo: "{}"
         id: id
@@ -2499,7 +2566,7 @@ components:
         migratedPassword:
           data:
             key: data
-          type: null
+          type: PASSWORD_TYPE_UNKNOWN
           enabled: true
         taxCode: taxCode
         defaultBillingAddressId: defaultBillingAddressId
@@ -2676,7 +2743,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -2700,7 +2767,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -2737,8 +2804,8 @@ components:
             id: id
           surname: surname
           permissions:
-          - null
-          - null
+          - PERMISSION_UNKNOWN
+          - PERMISSION_UNKNOWN
           fiscalCode: fiscalCode
           additionalInfo: "{}"
           id: id
@@ -2760,7 +2827,7 @@ components:
           migratedPassword:
             data:
               key: data
-            type: null
+            type: PASSWORD_TYPE_UNKNOWN
             enabled: true
           taxCode: taxCode
           defaultBillingAddressId: defaultBillingAddressId
@@ -2779,7 +2846,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -2803,7 +2870,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -2840,8 +2907,8 @@ components:
             id: id
           surname: surname
           permissions:
-          - null
-          - null
+          - PERMISSION_UNKNOWN
+          - PERMISSION_UNKNOWN
           fiscalCode: fiscalCode
           additionalInfo: "{}"
           id: id
@@ -2863,7 +2930,7 @@ components:
           migratedPassword:
             data:
               key: data
-            type: null
+            type: PASSWORD_TYPE_UNKNOWN
             enabled: true
           taxCode: taxCode
           defaultBillingAddressId: defaultBillingAddressId
@@ -2997,7 +3064,7 @@ components:
             key: true
           author: author
           id: id
-          source: null
+          source: CONSENT_SOURCE_UNKNOWN
           subjectId: subjectId
         - createdAt: 2000-01-23T04:56:07.000+00:00
           grn: grn
@@ -3005,7 +3072,7 @@ components:
             key: true
           author: author
           id: id
-          source: null
+          source: CONSENT_SOURCE_UNKNOWN
           subjectId: subjectId
       properties:
         consents:
@@ -3055,7 +3122,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -3079,7 +3146,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -3116,8 +3183,8 @@ components:
             id: id
           surname: surname
           permissions:
-          - null
-          - null
+          - PERMISSION_UNKNOWN
+          - PERMISSION_UNKNOWN
           fiscalCode: fiscalCode
           additionalInfo: "{}"
           id: id
@@ -3139,7 +3206,7 @@ components:
           migratedPassword:
             data:
               key: data
-            type: null
+            type: PASSWORD_TYPE_UNKNOWN
             enabled: true
           taxCode: taxCode
           defaultBillingAddressId: defaultBillingAddressId
@@ -3158,7 +3225,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -3182,7 +3249,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -3219,8 +3286,8 @@ components:
             id: id
           surname: surname
           permissions:
-          - null
-          - null
+          - PERMISSION_UNKNOWN
+          - PERMISSION_UNKNOWN
           fiscalCode: fiscalCode
           additionalInfo: "{}"
           id: id
@@ -3242,7 +3309,7 @@ components:
           migratedPassword:
             data:
               key: data
-            type: null
+            type: PASSWORD_TYPE_UNKNOWN
             enabled: true
           taxCode: taxCode
           defaultBillingAddressId: defaultBillingAddressId
@@ -3342,7 +3409,7 @@ components:
       example:
         data:
           key: data
-        type: null
+        type: PASSWORD_TYPE_UNKNOWN
         enabled: true
       properties:
         data:
@@ -3433,7 +3500,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -3457,7 +3524,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -3494,8 +3561,8 @@ components:
             id: id
           surname: surname
           permissions:
-          - null
-          - null
+          - PERMISSION_UNKNOWN
+          - PERMISSION_UNKNOWN
           fiscalCode: fiscalCode
           additionalInfo: "{}"
           id: id
@@ -3517,7 +3584,7 @@ components:
           migratedPassword:
             data:
               key: data
-            type: null
+            type: PASSWORD_TYPE_UNKNOWN
             enabled: true
           taxCode: taxCode
           defaultBillingAddressId: defaultBillingAddressId
@@ -3536,7 +3603,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -3560,7 +3627,7 @@ components:
             country: country
             grn: grn
             city: city
-            kind: null
+            kind: SHIPPING
             em:
               entityCode: entityCode
               entityType: entityType
@@ -3597,8 +3664,8 @@ components:
             id: id
           surname: surname
           permissions:
-          - null
-          - null
+          - PERMISSION_UNKNOWN
+          - PERMISSION_UNKNOWN
           fiscalCode: fiscalCode
           additionalInfo: "{}"
           id: id
@@ -3620,7 +3687,7 @@ components:
           migratedPassword:
             data:
               key: data
-            type: null
+            type: PASSWORD_TYPE_UNKNOWN
             enabled: true
           taxCode: taxCode
           defaultBillingAddressId: defaultBillingAddressId
@@ -3960,6 +4027,12 @@ components:
           type: string
       type: object
     googlerpcStatus:
+      example:
+        code: 0
+        details:
+        - '@type': '@type'
+        - '@type': '@type'
+        message: message
       properties:
         code:
           format: int32
@@ -4104,6 +4177,10 @@ components:
       - NULL_VALUE
       type: string
   securitySchemes:
+    Authorization:
+      in: header
+      name: Authorization
+      type: apiKey
     standardAuthorization:
       flows:
         implicit:

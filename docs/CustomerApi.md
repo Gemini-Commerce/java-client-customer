@@ -80,16 +80,23 @@ All URIs are relative to *https://cdp.api.gogemini.io*
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerCreateSubscriberRequest body = new CustomerCreateSubscriberRequest(); // CustomerCreateSubscriberRequest | 
@@ -119,7 +126,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -141,16 +148,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerCreateSubscriberRequest body = new CustomerCreateSubscriberRequest(); // CustomerCreateSubscriberRequest | 
@@ -180,7 +194,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -202,16 +216,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUnsubscribeRequest body = new CustomerUnsubscribeRequest(); // CustomerUnsubscribeRequest | 
@@ -241,7 +262,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -263,16 +284,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUnsubscribeRequest body = new CustomerUnsubscribeRequest(); // CustomerUnsubscribeRequest | 
@@ -302,7 +330,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -324,16 +352,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAddCustomerToGroupRequest body = new CustomerAddCustomerToGroupRequest(); // CustomerAddCustomerToGroupRequest | 
@@ -363,7 +398,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -385,16 +420,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAddCustomerToGroupRequest body = new CustomerAddCustomerToGroupRequest(); // CustomerAddCustomerToGroupRequest | 
@@ -424,7 +466,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -446,16 +488,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAssignAgentRequest body = new CustomerAssignAgentRequest(); // CustomerAssignAgentRequest | 
@@ -485,7 +534,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -507,16 +556,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerBulkUpdateRequest body = new CustomerBulkUpdateRequest(); // CustomerBulkUpdateRequest | 
@@ -546,7 +602,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -568,16 +624,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerBulkUpdateRequest body = new CustomerBulkUpdateRequest(); // CustomerBulkUpdateRequest | 
@@ -607,7 +670,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -629,16 +692,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerCreateRequest body = new CustomerCreateRequest(); // CustomerCreateRequest | 
@@ -668,7 +738,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -690,16 +760,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerCreateRequest body = new CustomerCreateRequest(); // CustomerCreateRequest | 
@@ -729,7 +806,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -751,16 +828,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAddressCreateRequest body = new CustomerAddressCreateRequest(); // CustomerAddressCreateRequest | 
@@ -790,7 +874,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -812,16 +896,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAddressCreateRequest body = new CustomerAddressCreateRequest(); // CustomerAddressCreateRequest | 
@@ -851,7 +942,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -873,16 +964,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerCreateGroupRequest body = new CustomerCreateGroupRequest(); // CustomerCreateGroupRequest | 
@@ -912,7 +1010,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -934,16 +1032,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerCreateGroupRequest body = new CustomerCreateGroupRequest(); // CustomerCreateGroupRequest | 
@@ -973,7 +1078,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -995,16 +1100,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerCreateSubscriberRequest body = new CustomerCreateSubscriberRequest(); // CustomerCreateSubscriberRequest | 
@@ -1034,7 +1146,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1056,16 +1168,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerCreateSubscriberRequest body = new CustomerCreateSubscriberRequest(); // CustomerCreateSubscriberRequest | 
@@ -1095,7 +1214,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1117,16 +1236,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAddressDeleteRequest body = new CustomerAddressDeleteRequest(); // CustomerAddressDeleteRequest | 
@@ -1156,7 +1282,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1178,16 +1304,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAddressDeleteRequest body = new CustomerAddressDeleteRequest(); // CustomerAddressDeleteRequest | 
@@ -1217,7 +1350,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1239,16 +1372,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerDeleteGroupRequest body = new CustomerDeleteGroupRequest(); // CustomerDeleteGroupRequest | 
@@ -1278,7 +1418,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1300,16 +1440,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerDeleteGroupRequest body = new CustomerDeleteGroupRequest(); // CustomerDeleteGroupRequest | 
@@ -1339,7 +1486,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1361,16 +1508,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindManyRequest body = new CustomerFindManyRequest(); // CustomerFindManyRequest | 
@@ -1400,7 +1554,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1422,16 +1576,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindManyRequest body = new CustomerFindManyRequest(); // CustomerFindManyRequest | 
@@ -1461,7 +1622,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1483,16 +1644,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindByEmailRequest body = new CustomerFindByEmailRequest(); // CustomerFindByEmailRequest | 
@@ -1522,7 +1690,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1544,16 +1712,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindByEmailRequest body = new CustomerFindByEmailRequest(); // CustomerFindByEmailRequest | 
@@ -1583,7 +1758,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1605,16 +1780,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindByIdRequest body = new CustomerFindByIdRequest(); // CustomerFindByIdRequest | 
@@ -1644,7 +1826,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1666,16 +1848,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindByIdRequest body = new CustomerFindByIdRequest(); // CustomerFindByIdRequest | 
@@ -1705,7 +1894,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1727,16 +1916,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindSubscriberByEmailRequest body = new CustomerFindSubscriberByEmailRequest(); // CustomerFindSubscriberByEmailRequest | 
@@ -1766,7 +1962,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1788,16 +1984,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindSubscriberByEmailRequest body = new CustomerFindSubscriberByEmailRequest(); // CustomerFindSubscriberByEmailRequest | 
@@ -1827,7 +2030,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1849,16 +2052,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindSubscriberByIdRequest body = new CustomerFindSubscriberByIdRequest(); // CustomerFindSubscriberByIdRequest | 
@@ -1888,7 +2098,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1910,16 +2120,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerFindSubscriberByIdRequest body = new CustomerFindSubscriberByIdRequest(); // CustomerFindSubscriberByIdRequest | 
@@ -1949,7 +2166,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1971,16 +2188,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerGetGroupByCodeRequest body = new CustomerGetGroupByCodeRequest(); // CustomerGetGroupByCodeRequest | 
@@ -2010,7 +2234,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2032,16 +2256,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerGetGroupByCodeRequest body = new CustomerGetGroupByCodeRequest(); // CustomerGetGroupByCodeRequest | 
@@ -2071,7 +2302,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2093,16 +2324,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerGetGroupByIdRequest body = new CustomerGetGroupByIdRequest(); // CustomerGetGroupByIdRequest | 
@@ -2132,7 +2370,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2154,16 +2392,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerGetGroupByIdRequest body = new CustomerGetGroupByIdRequest(); // CustomerGetGroupByIdRequest | 
@@ -2193,7 +2438,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2215,16 +2460,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerGrantPermissionsRequest body = new CustomerGrantPermissionsRequest(); // CustomerGrantPermissionsRequest | 
@@ -2254,7 +2506,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2276,16 +2528,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerGrantPermissionsRequest body = new CustomerGrantPermissionsRequest(); // CustomerGrantPermissionsRequest | 
@@ -2315,7 +2574,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2337,16 +2596,23 @@ ListConsents list all consents of a customer
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerListConsentsRequest body = new CustomerListConsentsRequest(); // CustomerListConsentsRequest | 
@@ -2376,7 +2642,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2398,16 +2664,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerListCustomersRequest body = new CustomerListCustomersRequest(); // CustomerListCustomersRequest | 
@@ -2437,7 +2710,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2459,16 +2732,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerListCustomersRequest body = new CustomerListCustomersRequest(); // CustomerListCustomersRequest | 
@@ -2498,7 +2778,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2520,16 +2800,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerListGroupsRequest body = new CustomerListGroupsRequest(); // CustomerListGroupsRequest | 
@@ -2559,7 +2846,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2581,16 +2868,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerListGroupsRequest body = new CustomerListGroupsRequest(); // CustomerListGroupsRequest | 
@@ -2620,7 +2914,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2642,16 +2936,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerRemoveCustomerFromGroupRequest body = new CustomerRemoveCustomerFromGroupRequest(); // CustomerRemoveCustomerFromGroupRequest | 
@@ -2681,7 +2982,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2703,16 +3004,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerRemoveCustomerFromGroupRequest body = new CustomerRemoveCustomerFromGroupRequest(); // CustomerRemoveCustomerFromGroupRequest | 
@@ -2742,7 +3050,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2764,16 +3072,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerRemoveDefaultAddressRequest body = new CustomerRemoveDefaultAddressRequest(); // CustomerRemoveDefaultAddressRequest | 
@@ -2803,7 +3118,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2825,16 +3140,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerRemoveDefaultAddressRequest body = new CustomerRemoveDefaultAddressRequest(); // CustomerRemoveDefaultAddressRequest | 
@@ -2864,7 +3186,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2886,16 +3208,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerRevokePermissionsRequest body = new CustomerRevokePermissionsRequest(); // CustomerRevokePermissionsRequest | 
@@ -2925,7 +3254,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2947,16 +3276,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerRevokePermissionsRequest body = new CustomerRevokePermissionsRequest(); // CustomerRevokePermissionsRequest | 
@@ -2986,7 +3322,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3008,16 +3344,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerSearchRequest body = new CustomerSearchRequest(); // CustomerSearchRequest | 
@@ -3047,7 +3390,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3069,16 +3412,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerSearchRequest body = new CustomerSearchRequest(); // CustomerSearchRequest | 
@@ -3108,7 +3458,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3130,16 +3480,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerSetDefaultAddressRequest body = new CustomerSetDefaultAddressRequest(); // CustomerSetDefaultAddressRequest | 
@@ -3169,7 +3526,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3191,16 +3548,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerSetDefaultAddressRequest body = new CustomerSetDefaultAddressRequest(); // CustomerSetDefaultAddressRequest | 
@@ -3230,7 +3594,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3252,16 +3616,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerSetPermissionsRequest body = new CustomerSetPermissionsRequest(); // CustomerSetPermissionsRequest | 
@@ -3291,7 +3662,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3313,16 +3684,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerSetPermissionsRequest body = new CustomerSetPermissionsRequest(); // CustomerSetPermissionsRequest | 
@@ -3352,7 +3730,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3374,16 +3752,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUnassignAgentRequest body = new CustomerUnassignAgentRequest(); // CustomerUnassignAgentRequest | 
@@ -3413,7 +3798,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3435,16 +3820,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUnsubscribeRequest body = new CustomerUnsubscribeRequest(); // CustomerUnsubscribeRequest | 
@@ -3474,7 +3866,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3496,16 +3888,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUnsubscribeRequest body = new CustomerUnsubscribeRequest(); // CustomerUnsubscribeRequest | 
@@ -3535,7 +3934,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3557,16 +3956,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUpdateRequest body = new CustomerUpdateRequest(); // CustomerUpdateRequest | 
@@ -3596,7 +4002,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3618,16 +4024,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUpdateRequest body = new CustomerUpdateRequest(); // CustomerUpdateRequest | 
@@ -3657,7 +4070,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3679,16 +4092,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAddressUpdateRequest body = new CustomerAddressUpdateRequest(); // CustomerAddressUpdateRequest | 
@@ -3718,7 +4138,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3740,16 +4160,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerAddressUpdateRequest body = new CustomerAddressUpdateRequest(); // CustomerAddressUpdateRequest | 
@@ -3779,7 +4206,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3801,16 +4228,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUpdateGroupRequest body = new CustomerUpdateGroupRequest(); // CustomerUpdateGroupRequest | 
@@ -3840,7 +4274,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3862,16 +4296,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUpdateGroupRequest body = new CustomerUpdateGroupRequest(); // CustomerUpdateGroupRequest | 
@@ -3901,7 +4342,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3923,16 +4364,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUpdateSubscriberRequest body = new CustomerUpdateSubscriberRequest(); // CustomerUpdateSubscriberRequest | 
@@ -3962,7 +4410,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3984,16 +4432,23 @@ No authorization required
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Customer.ApiClient;
-import GeminiCommerce_Customer.ApiException;
-import GeminiCommerce_Customer.Configuration;
-import GeminiCommerce_Customer.models.*;
+import GeminiCommerce.Customer.ApiClient;
+import GeminiCommerce.Customer.ApiException;
+import GeminiCommerce.Customer.Configuration;
+import GeminiCommerce.Customer.auth.*;
+import GeminiCommerce.Customer.models.*;
 import org.openapitools.client.api.CustomerApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://cdp.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
 
     CustomerApi apiInstance = new CustomerApi(defaultClient);
     CustomerUpdateSubscriberRequest body = new CustomerUpdateSubscriberRequest(); // CustomerUpdateSubscriberRequest | 
@@ -4023,7 +4478,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 

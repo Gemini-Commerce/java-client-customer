@@ -40,31 +40,30 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Customer.JSON;
+import GeminiCommerce.Customer.JSON;
 
 /**
  * CustomerListCustomersRequestFilter
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T12:05:51.588588303Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:44:50.163421017Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CustomerListCustomersRequestFilter {
   public static final String SERIALIZED_NAME_GENDERS = "genders";
   @SerializedName(SERIALIZED_NAME_GENDERS)
-  private List<String> genders;
+  private List<String> genders = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
-  private List<ListCustomersRequestFilterDate> createdAt;
+  private List<ListCustomersRequestFilterDate> createdAt = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_COUNTRIES = "countries";
   @SerializedName(SERIALIZED_NAME_COUNTRIES)
-  private List<String> countries;
+  private List<String> countries = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_AGENT_GRN = "agentGrn";
   @SerializedName(SERIALIZED_NAME_AGENT_GRN)
@@ -86,10 +85,10 @@ public class CustomerListCustomersRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get genders
    * @return genders
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getGenders() {
     return genders;
@@ -113,10 +112,10 @@ public class CustomerListCustomersRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public List<ListCustomersRequestFilterDate> getCreatedAt() {
     return createdAt;
@@ -140,10 +139,10 @@ public class CustomerListCustomersRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get countries
    * @return countries
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getCountries() {
     return countries;
@@ -159,10 +158,10 @@ public class CustomerListCustomersRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get agentGrn
    * @return agentGrn
-  **/
+   */
   @javax.annotation.Nullable
   public String getAgentGrn() {
     return agentGrn;
@@ -172,6 +171,50 @@ public class CustomerListCustomersRequestFilter {
     this.agentGrn = agentGrn;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the CustomerListCustomersRequestFilter instance itself
+   */
+  public CustomerListCustomersRequestFilter putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -186,12 +229,13 @@ public class CustomerListCustomersRequestFilter {
     return Objects.equals(this.genders, customerListCustomersRequestFilter.genders) &&
         Objects.equals(this.createdAt, customerListCustomersRequestFilter.createdAt) &&
         Objects.equals(this.countries, customerListCustomersRequestFilter.countries) &&
-        Objects.equals(this.agentGrn, customerListCustomersRequestFilter.agentGrn);
+        Objects.equals(this.agentGrn, customerListCustomersRequestFilter.agentGrn)&&
+        Objects.equals(this.additionalProperties, customerListCustomersRequestFilter.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(genders, createdAt, countries, agentGrn);
+    return Objects.hash(genders, createdAt, countries, agentGrn, additionalProperties);
   }
 
   @Override
@@ -202,6 +246,7 @@ public class CustomerListCustomersRequestFilter {
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    countries: ").append(toIndentedString(countries)).append("\n");
     sb.append("    agentGrn: ").append(toIndentedString(agentGrn)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -233,24 +278,16 @@ public class CustomerListCustomersRequestFilter {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to CustomerListCustomersRequestFilter
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to CustomerListCustomersRequestFilter
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!CustomerListCustomersRequestFilter.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in CustomerListCustomersRequestFilter is not found in the empty JSON string", CustomerListCustomersRequestFilter.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CustomerListCustomersRequestFilter.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CustomerListCustomersRequestFilter` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -296,6 +333,28 @@ public class CustomerListCustomersRequestFilter {
            @Override
            public void write(JsonWriter out, CustomerListCustomersRequestFilter value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -303,29 +362,50 @@ public class CustomerListCustomersRequestFilter {
            public CustomerListCustomersRequestFilter read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             CustomerListCustomersRequestFilter instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of CustomerListCustomersRequestFilter given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of CustomerListCustomersRequestFilter
-  * @throws IOException if the JSON string is invalid with respect to CustomerListCustomersRequestFilter
-  */
+  /**
+   * Create an instance of CustomerListCustomersRequestFilter given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of CustomerListCustomersRequestFilter
+   * @throws IOException if the JSON string is invalid with respect to CustomerListCustomersRequestFilter
+   */
   public static CustomerListCustomersRequestFilter fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, CustomerListCustomersRequestFilter.class);
   }
 
- /**
-  * Convert an instance of CustomerListCustomersRequestFilter to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of CustomerListCustomersRequestFilter to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

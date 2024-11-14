@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**customers**| [**List<CustomerCustomerResponse>**](CustomerCustomerResponse.md) |   | [optional]
+**customers**| [**List<CustomerCustomerResponse>**](CustomerCustomerResponse.md) |   | [optional] [default to new ArrayList<>()]
 **nextPageToken**| **String** |   | [optional]
 
 
