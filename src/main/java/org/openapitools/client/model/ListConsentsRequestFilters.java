@@ -50,7 +50,7 @@ import GeminiCommerce.Customer.JSON;
 /**
  * ListConsentsRequestFilters
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T15:23:14.016988784Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T16:28:00.934703301Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ListConsentsRequestFilters {
   public static final String SERIALIZED_NAME_SUBJECT_IDS = "subjectIds";
   @SerializedName(SERIALIZED_NAME_SUBJECT_IDS)

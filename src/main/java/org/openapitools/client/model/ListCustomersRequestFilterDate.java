@@ -49,7 +49,7 @@ import GeminiCommerce.Customer.JSON;
 /**
  * ListCustomersRequestFilterDate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T15:23:14.016988784Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T16:28:00.934703301Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ListCustomersRequestFilterDate {
   public static final String SERIALIZED_NAME_FROM = "from";
   @SerializedName(SERIALIZED_NAME_FROM)
